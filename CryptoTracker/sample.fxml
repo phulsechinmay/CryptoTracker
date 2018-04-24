@@ -1,0 +1,250 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+
+<Pane maxHeight="500.0" maxWidth="600.0" minHeight="500.0" minWidth="600.0" prefHeight="500.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1"
+    fx:controller="CryptoTracker.Controller">
+    <children>
+        <HBox layoutY="10.0" prefHeight="75.0" prefWidth="600.0">
+            <children>
+                <ImageView fitHeight="70.0" fitWidth="70.0" pickOnBounds="true" preserveRatio="true">
+                    <HBox.margin>
+                        <Insets bottom="2.5" left="10.0" right="5.0" top="2.5" />
+                    </HBox.margin>
+                    <image>
+                        <Image fx:id="bitcoinImg" url="@../res/bitcoin.png" />
+                    </image>
+                </ImageView>
+                <Label prefHeight="20.0" text="Bitcoin">
+                    <HBox.margin>
+                        <Insets bottom="27.5" left="30.0" right="20.0" top="27.5" />
+                    </HBox.margin>
+                    <font>
+                        <Font size="14.0" />
+                    </font>
+                </Label>
+                <Line endY="70.0">
+                    <HBox.margin>
+                        <Insets left="119.0" />
+                    </HBox.margin>
+                </Line>
+                <Label fx:id="bitcoinValue" alignment="CENTER" contentDisplay="CENTER" prefHeight="20.0" prefWidth="120.0" text="Label" textAlignment="CENTER">
+                    <HBox.margin>
+                        <Insets bottom="27.5" left="50.0" top="27.5" />
+                    </HBox.margin>
+                    <font>
+                        <Font size="14.0" />
+                    </font>
+                </Label>
+                <Button fx:id="bitcoinBtn" maxHeight="30.0" minHeight="30.0" mnemonicParsing="false" prefHeight="30.0" text="Exchange" onAction="#bitcoinExchange">
+                    <HBox.margin>
+                        <Insets bottom="22.5" left="45.0" top="22.5" />
+                    </HBox.margin>
+                </Button>
+            </children>
+        </HBox>
+        <HBox prefHeight="10.0" prefWidth="600.0" />
+        <HBox layoutY="85.0" prefHeight="75.0" prefWidth="600.0">
+            <children>
+                <ImageView fitHeight="70.0" fitWidth="70.0" pickOnBounds="true" preserveRatio="true">
+                    <HBox.margin>
+                        <Insets bottom="2.5" left="10.0" right="5.0" top="2.5" />
+                    </HBox.margin>
+                    <image>
+                        <Image fx:id="bitcoinCashImg" url="@../res/bitcoin-2.png" />
+                    </image>
+                </ImageView>
+                <Label prefHeight="20.0" text="Bitcoin Cash">
+                    <font>
+                        <Font size="14.0" />
+                    </font>
+                    <HBox.margin>
+                        <Insets bottom="27.5" left="30.0" top="27.5" />
+                    </HBox.margin>
+                </Label>
+                <Line endY="70.0">
+                    <HBox.margin>
+                        <Insets left="102.0" />
+                    </HBox.margin>
+                </Line>
+                <Label fx:id="bitcoinCashValue" alignment="CENTER" prefHeight="20.0" prefWidth="120.0" text="Label">
+                    <font>
+                        <Font size="14.0" />
+                    </font>
+                    <HBox.margin>
+                        <Insets bottom="27.5" left="50.0" top="27.5" />
+                    </HBox.margin>
+                </Label>
+                <Button fx:id="bitcoinCashBtn" maxHeight="30.0" minHeight="30.0" mnemonicParsing="false" prefHeight="30.0" text="Exchange" onAction="#bitcoinCashExchange">
+                    <HBox.margin>
+                        <Insets bottom="22.5" left="45.0" top="22.5" />
+                    </HBox.margin>
+                </Button>
+            </children>
+        </HBox>
+        <HBox layoutY="160.0" prefHeight="75.0" prefWidth="600.0">
+            <children>
+                <ImageView fitHeight="70.0" fitWidth="70.0" pickOnBounds="true" preserveRatio="true">
+                    <HBox.margin>
+                        <Insets bottom="2.5" left="10.0" right="5.0" top="2.5" />
+                    </HBox.margin>
+                    <image>
+                        <Image fx:id="ethereumImg" url="@../res/ethereum.png" />
+                    </image>
+                </ImageView>
+                <Label prefHeight="20.0" text="Ethereum">
+                    <font>
+                        <Font size="14.0" />
+                    </font>
+                    <HBox.margin>
+                        <Insets bottom="27.5" left="30.0" top="27.5" />
+                    </HBox.margin>
+                </Label>
+                <Line endY="70.0">
+                    <HBox.margin>
+                        <Insets left="121.0" />
+                    </HBox.margin>
+                </Line>
+                <Label fx:id="ethereumValue" alignment="CENTER" prefHeight="20.0" prefWidth="120.0" text="Label">
+                    <font>
+                        <Font size="14.0" />
+                    </font>
+                    <HBox.margin>
+                        <Insets bottom="27.5" left="50.0" top="27.5" />
+                    </HBox.margin>
+                </Label>
+                <Button fx:id="ethereumBtn" maxHeight="30.0" minHeight="30.0" mnemonicParsing="false" prefHeight="30.0" text="Exchange" onAction="#ethereumExchange">
+                    <HBox.margin>
+                        <Insets bottom="22.5" left="45.0" top="22.5" />
+                    </HBox.margin>
+                </Button>
+            </children>
+        </HBox>
+        <HBox layoutY="235.0" prefHeight="75.0" prefWidth="600.0">
+            <children>
+                <ImageView fitHeight="70.0" fitWidth="70.0" pickOnBounds="true" preserveRatio="true">
+                    <HBox.margin>
+                        <Insets bottom="2.5" left="10.0" right="5.0" top="2.5" />
+                    </HBox.margin>
+                    <image>
+                        <Image fx:id="litecoinImg" url="@../res/litecoin.png" />
+                    </image>
+                </ImageView>
+                <Label prefHeight="20.0" text="Litecoin">
+                    <font>
+                        <Font size="14.0" />
+                    </font>
+                    <HBox.margin>
+                        <Insets bottom="27.5" left="30.0" right="20.0" top="27.5" />
+                    </HBox.margin>
+                </Label>
+                <Line endY="70.0">
+                    <HBox.margin>
+                        <Insets left="112.0" />
+                    </HBox.margin>
+                </Line>
+                <Label fx:id="litecoinValue" alignment="CENTER" prefHeight="20.0" prefWidth="120.0" text="Label">
+                    <font>
+                        <Font size="14.0" />
+                    </font>
+                    <HBox.margin>
+                        <Insets bottom="27.5" left="50.0" top="27.5" />
+                    </HBox.margin>
+                </Label>
+                <Button fx:id="litecoinBtn" maxHeight="30.0" minHeight="30.0" mnemonicParsing="false" prefHeight="30.0" text="Exchange" onAction="#litecoinExchange">
+                    <HBox.margin>
+                        <Insets bottom="22.5" left="45.0" top="22.5" />
+                    </HBox.margin>
+                </Button>
+            </children>
+        </HBox>
+        <HBox layoutY="310.0" prefHeight="75.0" prefWidth="600.0">
+            <children>
+                <ImageView fitHeight="70.0" fitWidth="70.0" pickOnBounds="true" preserveRatio="true">
+                    <HBox.margin>
+                        <Insets bottom="2.5" left="10.0" right="5.0" top="2.5" />
+                    </HBox.margin>
+                    <image>
+                        <Image fx:id="rippleImg" url="@../res/ripple.png" />
+                    </image>
+                </ImageView>
+                <Label prefHeight="20.0" text="Ripple">
+                    <font>
+                        <Font size="14.0" />
+                    </font>
+                    <HBox.margin>
+                        <Insets bottom="27.5" left="30.0" right="20.0" top="27.5" />
+                    </HBox.margin>
+                </Label>
+                <Line endY="70.0">
+                    <HBox.margin>
+                        <Insets left="123.0" />
+                    </HBox.margin>
+                </Line>
+                <Label fx:id="rippleValue" alignment="CENTER" prefHeight="20.0" prefWidth="120.0" text="Label">
+                    <font>
+                        <Font size="14.0" />
+                    </font>
+                    <HBox.margin>
+                        <Insets bottom="27.5" left="50.0" top="27.5" />
+                    </HBox.margin>
+                </Label>
+                <Button fx:id="rippleBtn" maxHeight="30.0" minHeight="30.0" mnemonicParsing="false" prefHeight="30.0" text="Exchange" onAction="#rippleExchange">
+                    <HBox.margin>
+                        <Insets bottom="22.5" left="45.0" top="22.5" />
+                    </HBox.margin>
+                </Button>
+            </children>
+        </HBox>
+        <HBox layoutY="385.0" prefHeight="75.0" prefWidth="600.0">
+            <children>
+                <ImageView fitHeight="70.0" fitWidth="70.0" pickOnBounds="true" preserveRatio="true">
+                    <HBox.margin>
+                        <Insets bottom="2.5" left="10.0" right="5.0" top="2.5" />
+                    </HBox.margin>
+                    <image>
+                        <Image fx:id="eosImg" url="@../res/EOS.png" />
+                    </image>
+                </ImageView>
+                <Label prefHeight="20.0" text="EOS">
+                    <font>
+                        <Font size="14.0" />
+                    </font>
+                    <HBox.margin>
+                        <Insets bottom="27.5" left="30.0" right="20.0" top="27.5" />
+                    </HBox.margin>
+                </Label>
+                <Line endY="70.0">
+                    <HBox.margin>
+                        <Insets left="136.0" />
+                    </HBox.margin>
+                </Line>
+                <Label fx:id="eosValue" alignment="CENTER" prefHeight="20.0" prefWidth="120.0" text="Label">
+                    <font>
+                        <Font size="14.0" />
+                    </font>
+                    <HBox.margin>
+                        <Insets bottom="27.5" left="50.0" top="27.5" />
+                    </HBox.margin>
+                </Label>
+                <Button fx:id="eodBtn" maxHeight="30.0" minHeight="30.0" mnemonicParsing="false" prefHeight="30.0" text="Exchange" onAction="#eosExchange">
+                    <HBox.margin>
+                        <Insets bottom="22.5" left="45.0" top="22.5" />
+                    </HBox.margin>
+                </Button>
+            </children>
+        </HBox>
+        <HBox alignment="CENTER" layoutY="460.0" prefHeight="40.0" prefWidth="600.0">
+            <children>
+                <Button mnemonicParsing="false" text="Refresh" onAction="#refreshValues"/>
+            </children>
+        </HBox>
+    </children>
+</Pane>

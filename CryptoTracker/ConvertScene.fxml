@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+
+<Pane maxHeight="250.0" maxWidth="400.0" minHeight="250.0" minWidth="400.0" prefHeight="250.0" prefWidth="400.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1"
+    fx:controller="CryptoTracker.ConvertSceneController">
+    <children>
+        <VBox prefHeight="250.0" prefWidth="150.0">
+            <children>
+                <Label fx:id="leftLabel" alignment="CENTER" maxHeight="30.0" maxWidth="100.0" minHeight="30.0" minWidth="100.0" prefHeight="30.0" prefWidth="100.0" text="Label">
+                    <VBox.margin>
+                        <Insets left="25.0" right="25.0" top="20.0" />
+                    </VBox.margin>
+                </Label>
+                <ImageView fx:id="leftImg" fitHeight="90.0" fitWidth="90.0" pickOnBounds="true" preserveRatio="true">
+                    <VBox.margin>
+                        <Insets left="30.0" right="30.0" top="20.0" />
+                    </VBox.margin>
+                    <image>
+                        <Image url="@../res/bitcoin-2.png" />
+                    </image>
+                </ImageView>
+                <TextField fx:id="leftText" maxHeight="30.0" maxWidth="120.0" minHeight="30.0" minWidth="120.0" prefHeight="30.0" prefWidth="120.0">
+                    <VBox.margin>
+                        <Insets left="15.0" top="30.0" />
+                    </VBox.margin>
+                </TextField>
+            </children>
+        </VBox>
+        <VBox layoutX="150.0" prefHeight="250.0" prefWidth="100.0">
+            <children>
+                <Button fx:id="switchBtn" maxHeight="30.0" maxWidth="60.0" minHeight="30.0" minWidth="60.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="60.0" text="Switch" onAction="#switchCurrencies">
+                    <VBox.margin>
+                        <Insets left="20.0" top="30.0" />
+                    </VBox.margin>
+                </Button>
+                <Label alignment="CENTER" maxHeight="20.0" maxWidth="100.0" minHeight="20.0" minWidth="100.0" prefHeight="20.0" prefWidth="100.0" text="------------&gt;">
+                    <VBox.margin>
+                        <Insets top="55.0" />
+                    </VBox.margin>
+                </Label>
+                <Button fx:id="convertBtn" maxHeight="30.0" maxWidth="70.0" minHeight="30.0" minWidth="70.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="70.0" text="Convert" onAction="#convertValues">
+                    <VBox.margin>
+                        <Insets bottom="30.0" left="15.0" right="15.0" top="55.0" />
+                    </VBox.margin>
+                </Button>
+            </children>
+        </VBox>
+        <VBox layoutX="250.0" prefHeight="250.0" prefWidth="150.0">
+            <children>
+                <Label fx:id="rightLabel" alignment="CENTER" maxHeight="30.0" maxWidth="100.0" minHeight="30.0" minWidth="100.0" prefHeight="30.0" prefWidth="100.0" text="Label">
+                    <VBox.margin>
+                        <Insets left="25.0" right="25.0" top="20.0" />
+                    </VBox.margin>
+                </Label>
+                <ImageView fx:id="rightImg" fitHeight="90.0" fitWidth="90.0" pickOnBounds="true" preserveRatio="true">
+                    <VBox.margin>
+                        <Insets left="30.0" right="30.0" top="20.0" />
+                    </VBox.margin>
+                    <image>
+                        <Image url="@../res/money-bag.png" />
+                    </image>
+                </ImageView>
+                <TextField fx:id="rightText" maxHeight="30.0" maxWidth="120.0" minHeight="30.0" minWidth="120.0" prefHeight="30.0" prefWidth="120.0">
+                    <VBox.margin>
+                        <Insets left="15.0" top="30.0" />
+                    </VBox.margin>
+                </TextField>
+            </children>
+        </VBox>
+    </children>
+</Pane>
